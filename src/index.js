@@ -1,12 +1,21 @@
 
 exports.min = function min (array) {
-  return 0;
+  if (array == null  || array.length == 0) return 0;
+  
+  let number =  Math.min(...array);
+   return number;
 }
 
 exports.max = function max (array) {
-  return 0;
+  if (array == null  || array.length == 0) return 0;
+  let number =  Math.max(...array);
+   return number;
 }
 
 exports.avg = function avg (array) {
-  return 0;
+if (array == null  || array.length == 0) return 0;
+
+ let sum = array.reduce((acc, el) => 
+    acc+el,0);
+    return sum/array.length;
 }
